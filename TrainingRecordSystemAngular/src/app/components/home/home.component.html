@@ -1,0 +1,8 @@
+<div class="home">
+    <div class="text custom">
+        <h1 class="display-4" style="font-size: 70px;">Welcome {{username | titlecase}}</h1>
+        <p><b><h2 style="font-size: 35px;">Training Record System</h2></b></p>
+        <br>
+        <h6 *ngIf="username == null" style="font-size: 20px;"> Click here to <a [routerLink]="['/signin']"  class="custom-link" routerLinkActive="router-link-active">Sign In</a>.</h6>
+    </div>
+</div>
